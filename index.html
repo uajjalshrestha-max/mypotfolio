@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ujjal Shrestha | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #050808;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 6%;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            background: #00e5e5;
+            color: black;
+            padding: 7px 11px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #b6b6b6;
+            text-decoration: none;
+            font-size: 12px;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00e5e5;
+        }
+
+        .hire {
+            background: #00e5e5;
+            color: black !important;
+            padding: 12px 25px;
+            border-radius: 30px;
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .status {
+            display: inline-block;
+            color: #00dada;
+            border: 1px solid #174c4c;
+            background: #0b1919;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 8vw, 90px);
+            letter-spacing: -4px;
+            margin-bottom: 20px;
+        }
+
+        .gradient {
+            background: linear-gradient(
+                90deg,
+                #00e5e5,
+                #087dff
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: #a3a3a3;
+            font-size: 23px;
+            line-height: 1.5;
+        }
+
+        .skills-line {
+            color: #398d8d;
+            margin-top: 15px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            margin-top: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 17px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin: 8px;
+            transition: 0.3s;
+        }
+
+        .primary {
+            background: #00e5e5;
+            color: black;
+        }
+
+        .secondary {
+            border: 1px solid #263535;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 20px #00e5e555;
+        }
+
+        /* SOCIAL LINKS */
+
+        .social {
+            position: fixed;
+            left: 25px;
+            bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .social a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .social a:hover {
+            color: #00e5e5;
+        }
+
+        /* BOTTOM TEXT */
+
+        .bottom {
+            text-align: center;
+            color: #777;
+            font-size: 11px;
+            letter-spacing: 3px;
+            padding: 30px;
+        }
+
+        /* MOBILE DESIGN */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .nav-links {
+                gap: 13px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links a {
+                font-size: 10px;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .social {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            <span>U</span> Ujjal.
+        </div>
+
+        <div class="nav-links">
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#achievements">ACHIEVEMENTS</a>
+            <a href="#contact" class="hire">Hire Me</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HOME SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="status">
+                ● SYSTEM ONLINE: IT STUDENT
+            </div>
+
+            <h1>
+                Ujjal <span class="gradient">Shrestha</span>
+            </h1>
+
+            <p class="subtitle">
+                Exploring Technology, Building Skills<br>
+                and Creating My Future.
+            </p>
+
+            <p class="skills-line">
+                Information Technology | Programming |
+                Cybersecurity
+            </p>
+
+            <div class="buttons">
+
+                <a href="#projects" class="btn primary">
+                    View Projects →
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOCIAL LINKS -->
+
+    <div class="social">
+
+        <a href="https://github.com/" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank">
+            LinkedIn
+        </a>
+
+    </div>
+
+
+    <div class="bottom">
+        SCROLL TO EXPLORE ↓
+    </div>
+
+</body>
+</html>
